@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link
+            id="styleThemes"
+            rel="stylesheet"
+            href="css/theme1.css"
+            type="text/css"
+            media="all"
+        />
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+                <p>calc</p>
+                <div class="theme">
+                    <small>theme</small>
+
+                    <div class="checall">
+                        <div class="checnum">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                        </div>
+                        <div class="chec">
+                            <input
+                                type="radio"
+                                name="theme"
+                                id="theme1"
+                                value="1"
+                                checked
+                                onclick="theTheme(this.value)"
+                            />
+                            <input
+                                type="radio"
+                                name="theme"
+                                id="theme2"
+                                value="2"
+                                onclick="theTheme(this.value)"
+                            />
+                            <input
+                                type="radio"
+                                name="theme"
+                                id="theme3"
+                                value="3"
+                                onclick="theTheme(this.value)"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input">
+                <input type="text" id="inputCalc" disabled value="" />
+            </div>
+          <div class="button">
+  <button onclick="textinput(this.innerHTML)" id="one">1</button>
+  <button onclick="textinput(this.innerHTML)" id="two">2</button>
+  <button onclick="textinput(this.innerHTML)" id="three">3</button>
+  <button onclick="textinput(this.innerHTML)" id="four">4</button>
+  <button onclick="textinput(this.innerHTML)" id="five">5</button>
+  <button onclick="textinput(this.innerHTML)" id="six">6</button>
+  <button onclick="textinput(this.innerHTML)" id="seven">7</button>
+  <button onclick="textinput(this.innerHTML)" id="eight">8</button>
+  <button onclick="textinput(this.innerHTML)" id="nine">9</button>
+  <button onclick="textinput(this.innerHTML)" id="zero">0</button>
+  <button onclick="del()" id="del">DEL</button>
+  <button onclick="textinput(this.innerHTML)" id="posi">+</button>
+  <button onclick="textinput(this.innerHTML)" id="nega">-</button>
+  <button onclick="textinput(this.innerHTML)" id="multiplied">*</button>
+  <button onclick="textinput(this.innerHTML)" id="division">/</button>
+  <button onclick="textinput(this.innerHTML)" id="decimal">.</button>
+  <button onclick="reset()" id="reset">RESET</button>
+  <button onclick="calculate()" id="equal">=</button>
+</div>
+
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
